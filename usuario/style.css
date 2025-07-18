@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Saira", sans-serif;
+    margin: 0;
+}
+
+dialog { margin: auto; }
+
+nav {
+    padding: 16px 0px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+nav a {
+    padding: 0px 16px;
+    font-weight: bold;
+    color: white;
+    transition: padding 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+nav a:last-child { margin-left: auto; }
+
+tr, td {
+    text-align: center;
+    padding: 10px 50px;
+    border: 1px solid black;
+}
+
+th {
+    text-align: center;
+    color: #ddd;
+    background-color: #242538;
+    padding: 10px 50px;
+    border: 1px solid black;
+}
+
+#tabela, #tabelaArtista {
+    background-color: #32334a;
+    padding-bottom: 100px;
+}
+
+#tabela > table, #tabelaArtista > table {
+    background-color: #45475f;
+}
+
+#tabelaPlayList, #tabelaArtista {
+    color: white;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#tabela h1, #favArts h1, #tabelaArtista h1 {
+    color: #71e3da;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#tabela a, #tabelaArtista a {
+    color: #71e3da;
+    padding: 0px 8px;
+}
+
+#regPlayList, #favArts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2b2c40;
+}
+
+#feed {
+    margin: auto;
+    padding: 50px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px #00000099;
+}
+
+#feed::backdrop { backdrop-filter: blur(5px); }
+
+#formFavoritas, #formFavArts {
+    width: 100%;
+    color: white;
+    max-width: 400px;
+}
+
+#formFavoritas h1, #formFavArts h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #71e3da;
+    margin-bottom: 15px;
+}
+
+#formFavoritas input[type="text"], #formFavArts input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#formFavoritas button, #formFavArts button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formFavoritas button[type="reset"], #formFavArts button[type="reset"] {
+    background-color: #8a5f5f;
+}
+
+#formFavoritas button[type="reset"]:hover, #formFavArts button[type="reset"]:hover {
+    background-color: #a88080;
+}
+
+#formFavoritas button[type="submit"], #formFavArts button[type="submit"] {
+    background-color: #5f608a;
+    margin-top: 5px;
+}
+
+#formFavoritas button[type="submit"]:hover, #formFavArts button[type="submit"]:hover {
+    background-color: #6f709b;
+    margin-top: 5px;
+}
+
+#feedback {
+    background-color: #fafafa;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    justify-content: center;
+}
+
+#feedback h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#formFeedback label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#formFeedback input[type="checkbox"],
+#formFeedback input[type="radio"] {
+    margin-right: 10px;
+}
+
+#formFeedback textarea {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+#formFeedback button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#formFeedback button:hover { background-color: #6dc970; }
+
+#feedbackDireita {
+    text-align: center;
+    padding: 10px;
+}
+
+.mensagem-sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
